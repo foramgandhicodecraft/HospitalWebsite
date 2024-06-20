@@ -21,22 +21,23 @@ Includes social network icons linked appropriately.
 Styled with a black background, white text, and proper spacing between items.
 
 Home Page:
-HTML Tags Used: <div>, <marquee>, <img>, heading tags (<h1> to <h6>), <i>, <b>, <small>, <large>, <pre>, <p>, <a>, <u>.
+HTML Tags Used: div, p, i, img, a, heading tags, pre, b, small, form, etc.
 Inline and internal CSS used for styling.
-Animations applied to headings (<h1> and <h3>) using @keyframes.
-Image Gallery Page:
+Animations applied to headings (Header1 and Header3) using keyframes.
 
+Image Gallery Page:
 Divided into four main divisions with images and paragraphs.
 Styling includes borders, image placement, and heading colors.
+
 About Us Page:
-
-HTML Tags Used: <div>, <p>, <i>, <img>, <a>, heading tags, <pre>, <b>, <small>, <form>, etc.
+HTML Tags Used: div, p, i, img, a, heading tags, pre, b, small, form, etc.
 Internal CSS used for styling with properties like margins, text alignment, animations, colors, and backgrounds.
-Book Appointment Page:
 
-HTML Tags Used: <form>, <input>, <button>, <br>, <label>, <table>, <th>, <td>, heading tags.
+Book Appointment Page:
+HTML Tags Used: form, input, button, br, label, table, th, td, heading tags.
 Internal CSS used for styling including text alignment, background colors, table borders, etc.
 Includes internal JavaScript for form validation (getElementById, regex, etc.).
+
 Project Structure
 The project is organized into distinct pages each fulfilling specific functionalities related to hospital management. Each page includes appropriate HTML structure, CSS styling, and where applicable, JavaScript for interactive elements.
 
