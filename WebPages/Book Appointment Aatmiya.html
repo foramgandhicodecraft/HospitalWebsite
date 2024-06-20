@@ -1,0 +1,434 @@
+<html>
+    <head>
+        <title>Book Appointment</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            tr:nth-child(even){
+    background-color:lightgrey;
+}
+table,tr,th{
+    border:1px solid lightgrey;
+    border-collapse:collapse;
+}
+
+             #log-out{
+        float:left;
+        height:20px;
+        width:10px;
+        margin-left:60%;
+        margin-top:0.5%;
+    }
+    #log{
+        background-color:red;
+        width:70px;
+        height:50px;
+    }
+    .menu{
+        float:left;
+        background-color:black;
+        color:white;
+        width:10%;
+        height:5%;
+        font-size: 115%;
+        margin-top: 0%;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    .menu:hover{
+        background-color: pink;
+    }
+    .dropdown{
+        position:relative;
+        display:inline-block;
+        height:5%;
+    }
+    .dropdown-content{
+        position:absolute;
+        display:none;
+        width:100%;
+        background-color:red;
+        color:black;
+        height:5%;
+    }
+    .dropdown:hover .dropdown-content{
+        background-color:pink;
+        display:block;
+    }
+    .t{
+        text-decoration:none;
+    }
+    .tcolor{
+        color:white;
+
+    }
+    .tcol{
+        color:white;
+    }
+    .fieldset{
+        height: 35%;
+        width: 40%;
+        margin: auto;
+        margin-top: 3%;
+        background-color: aliceblue;
+    }
+    .table{
+        width: 100%;
+        margin: auto;
+    }
+    .name{
+        width:60%;
+
+    }
+    .pic{
+        float:left;
+    }
+    
+    #submit{
+        margin-left:47%;
+        background-color: red;
+        margin-top: 2%;
+        height: 5%;
+        width:5%;
+    }
+    .size{
+        margin: auto;
+    }
+   .book{
+    position: relative;
+    animation: my_animation 5s 1;
+    animation-fill-mode: forwards;
+   }
+@keyframes my_animation{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
+.container{
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+            .flex-item{
+                color: white;
+                margin: 50px;
+                gap: 10px;
+            }
+            #flex-item1 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item2 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item3 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item4{
+                display:flex;
+                flex-direction:column;
+            }
+            .flex-item a{
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+
+        <script>
+            function myfunction(){
+            var a=document.getElementById("fn");
+            if(a.value==""){
+                alert("Please enter first name");
+            }
+            var pattern1="[a-zA-Z]";
+            var regex1=new RegExp(pattern1);
+            if(!regex1.test(a.value)){
+                alert("Invalid first name");
+            }
+
+            var b=document.getElementById("ln");
+            if(b.value==""){
+                alert("Please enter last name");
+            }
+            var pattern2="[a-zA-Z]";
+            var regex2=new RegExp(pattern2);
+            if(!regex2.test(a.value)){
+                alert("Invalid last name");
+            }
+
+        var c=document.getElementById("cn");
+        if(c.value==""){
+            alert("Please enter contact number");
+        }
+        var pattern3="[0-9]";
+        var regex3=new RegExp(pattern3);
+        if(!regex3.test(c.value)){
+            alert("Invalid contact number");
+        }
+
+        var d=document.getElementById("ed");
+        if(d.value==""){
+            alert("Please enter Employee Id");
+        }
+        var pattern4="[0-9]";
+        var regex4=new RegExp(pattern4);
+        if(!regex4.test(d.value)){
+            alert("Invalid Employee Id");
+        }
+
+        var e=document.getElementById("emd");
+        if(e.value==""){
+            alert("Please enter E-mail Id");
+        }
+        var pattern5="[a-zA-Z_\-\.]+[@][a-z]+[\.][a-z]{2,3}";
+        var regex5=new RegExp(pattern5);
+        if(!regex5.test(e.value)){
+            alert("Invalid E-mail");
+        }
+
+        var f=document.getElementById("cd");
+        if(f.value==""){
+            alert("Please enter City Name");
+        }
+        var pattern6="[A-za-z]";
+        var regex6=new RegExp(pattern6);
+        if(!regex6.test(f.value)){
+            alert("Invalid City Name");
+        }
+
+        var g=document.getElementById("sd");
+        if(g.value==""){
+            alert("Please enter Employee Id");
+        }
+        var pattern7="[a-zA-Z]";
+        var regex7=new RegExp(pattern7);
+        if(!regex7.test(g.value)){
+            alert("Invalid Employee Id");
+        }
+
+        var h=document.getElementById("bd");
+        if(h.value==""){
+            alert("Please enter Blood Group");
+        }
+        var pattern8="[A-Z]{1,2}[\+\-]";
+        var regex8=new RegExp(pattern8);
+        if(!regex8.test(h.value)){
+            alert("Invalid Blood Group");
+        }
+
+        var i=document.getElementById("cdd");
+        if(i.value==""){
+            alert("Please enter chronic disease");
+        }
+        var pattern9="[a-zA-Z]";
+        var regex9=new RegExp(pattern9);
+        if(!regex9.test(i.value)){
+            alert("Invalid chronic disease");
+        }
+
+        var j=document.getElementById("mod");
+        if(j.value==""){
+            alert("Please enter mobile number");
+        }
+        var pattern10="[0-9]";
+        var regex10=new RegExp(pattern10);
+        if(!regex10.test(j.value)){
+            alert("Invalid mobile number");
+        }
+
+        var k=document.getElementById("ad");
+        if(k.value==""){
+            alert("Please enter aadhar number");
+        }
+        var pattern11="[0-9]";
+        var regex11=new RegExp(pattern11);
+        if(!regex11.test(k.value)){
+            alert("Invalid Aadhar Number");
+        }
+
+        else{
+            alert("Your appointment has been recorded");
+        }
+    }
+        </script>
+
+    </head>
+    <body style="background-color: rgb(249, 175, 175);">
+        <div>
+            <h1 style="background-color:blue;color:white;">
+            <form>
+            <div style="float:left;">
+            Aatmiya Hospital,Vadodara
+            </div>
+            <div id="log-out">
+            <input type=submit value="Log Out" id="log">
+            </form>
+            </div><br>
+            <small>Dr. Umang Gandhi</small>
+            </h1>
+            
+            <div>
+                <div class="menu">
+                   <a href="Aatmiya Ortho Care.html" class="t tcolor">Home</a>
+                </div>
+                <div class="menu">
+                  <a href="ImageGalleryAatmiya.html" class="t tcolor"> Image Gallery</a>
+                </div>
+                <div class="menu">
+                    <a href="AboutUsAatmiya.html" class="t tcolor">About Us</a>
+                </div>
+                <div class="menu dropdown">
+                Surgeries
+                    <div class="dropdown-content">
+                       <a href="knee replacement Aatmiya.html" class="t tcol" style="color: red;">Knee Replacement</a><br>
+                        <a href="Hip Replacement.html" class="t tcol" style="color: red;">Hip Replacement</a><br>
+                        <a href="Stem cell Aatmiya.html" class="t tcol" style="color: red;">Stem cell</a><br>
+                       <a href="Emergency.html" class="t tcol " style="color: red;"> Emergency</a><br>
+                       <a href="#" class="t tcol" style="color: red;"> More</a>
+                </div>
+                </div>
+                <div class="menu">
+                   <a href="Pharmacy Details Aatmiya.html" class="t tcolor"> Pharmacy Details</a>
+                </div>
+                <div class="menu">
+                  <a href="Book Appointment Aatmiya.html" class="t tcolor" id="booking">  Book Appointment</a>
+                </div>
+                <div class="menu">
+                    <a href="Staff Aatmiya.html" class="t tcolor">  Staff</a>
+                  </div>
+            </div>
+                <h1 style="text-align: center;color: rgb(4, 80, 80);margin-top: 7%;" class="book">BOOK APPOINTMENT</h1>
+                <fieldset class="fieldset">
+                    <legend style="background-color:lightgrey;">
+                    By Name
+                    </legend>
+                   
+                        <div class="pic" style="width: 60%;"> 
+                    <label for="fn">First Name<br>
+                    <input type="text" name=fn id=fn class="name"><br><br>
+                    <label for="ln">Last Name<br>
+                    <input type="text" name=ln id=ln class="name">
+                    <br><br>
+                    <label for="ln">Contact Number<br>
+                    <input type="text" name=ln id=cn class="name">
+                </div>
+
+                <div class="pic" style="width: 40%;">
+                    <img src="" height="80%" width="80%" alt="Add Image" style="background-color: white;">
+                </div>
+                
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset" style="margin-top: 1%;">
+                    <legend style="background-color:lightgrey;">
+                    By Id
+                    </legend>
+                    <form>
+                    <table class="table">
+                    <tr>
+                    <th>Employee Id</th>
+                    <td class="size"> 
+                    <input type="text" name=ed id=ed> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Email Id</th>
+                    <td class="size">
+                    <input type="text" name=ed id=emd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>City</th>
+                    <td class="size">
+                    <input type="text" name=ed id=cd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>State</th>
+                    <td class="size">
+                    <input type="text" name=ed id=sd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Country</th>
+                    <td class="size">
+                    <input type="text" name=ed id=Cd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Blood Group</th>
+                    <td class="size">
+                    <input type="text" name=ed id=bd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Chronic Diseases</th>
+                    <td class="size"> 
+                    <input type="text" name=ed id=cdd> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Medicine Allergy</th>
+                    <td class="size">
+                    <input type="text" name=ed id=md> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Mobile Number</th>
+                    <td class="size">
+                    <input type="text" name=ed id=mod> 
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Aadhar number</th>
+                    <td class="size">
+                    <input type="text" name=ed id=ad> 
+                    </td>
+                    </tr>
+                    </table>
+                    </form>
+                    </fieldset>
+                    <form>
+                        <input type="button" onclick="myfunction()" id="submit" value="SUBMIT">
+                    </form>
+                    
+                    <div class="container">
+
+                        <div class="flex-item" id="flex-item1">
+                            <h2>Hospital</h2>
+                            <a href="AboutUsAatmiya.html">About Us</a>
+                            <a href="https://pay.google.com/about/">Online Payment</a>
+                            <a href="Book Appointment Aatmiya.html">Online Consultancy</a>
+                        </div>
+            
+                        <div class="flex-item" id="flex-item2">
+                            <h2>Online Shop</h2>
+                            <a href="Pharmacy Details Aatmiya.html">Medicines</a>
+                            <a href="Pharmacy Details Aatmiya.html">Pain sprays</a>
+                            <a href="Pharmacy Details Aatmiya.html">Elestrocaps</a>
+                        </div>
+            
+                        <div class="flex-item" id="flex-item3">
+                            <h2>Get Help</h2>
+                            <a href="Aatmiya Ortho Care.html">Our Services</a>
+                            <a href="Aatmiya Ortho Care.html">Privacy policy</a>
+                            <a href="Book Appointment Aatmiya.html">Book Appointment</a>
+                        </div>
+            
+                        <div class="flex-item" id="flex-item4">
+                            <h2>Contact Us</h2>
+                            <a href=""><i class="fab fa-facebook"> </i>-Aatmiya Hospital</a>
+                            <a href=""><i class="fab fa-twitter"> </i>-Aatmiya.ortho </a>
+                            <a href=""><i class="fab fa-whatsapp"> </i>-9824088605 </a>
+                        </div>
+            
+                    </div>
+
+    </body>
+
+</html>
