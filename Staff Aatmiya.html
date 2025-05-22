@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <title>Staff</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            .staff{
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+                border:3px solid black;
+                width: 55%;
+                border-collapse: collapse;
+                background-color: white;
+            }
+            td{
+                border: 3px solid black;
+                border-collapse: collapse;
+            }
+            .image{
+                padding-left: 8%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+            #log-out{
+        float:left;
+        height:20px;
+        width:10px;
+        margin-left:60%;
+        margin-top:0.5%;
+    }
+    #log{
+        background-color:red;
+        width:70px;
+        height:50px;
+    }
+    .menu{
+        float:left;
+        background-color:black;
+        color:white;
+        width:10%;
+        height:5%;
+        font-size: 115%;
+        margin-top: 0%;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    .menu:hover{
+        background-color: pink;
+    }
+    .dropdown{
+        position:relative;
+        display:inline-block;
+        height:5%;
+    }
+    .dropdown-content{
+        position:absolute;
+        display:none;
+        width:100%;
+        background-color:red;
+        color:black;
+        height:5%;
+    }
+    .dropdown:hover .dropdown-content{
+        background-color:rgb(169, 168, 168);
+        display:block;
+    }
+    .t{
+        text-decoration:none;
+    }
+    .tcolor{
+        color:white;
+
+    }
+    .tcol{
+        color:white;
+    }
+    .footer{
+        margin-top: 10%;
+    }
+    .staff_heading{
+        animation: my_animation 5s 1;
+    }
+    @keyframes my_animation{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    .container{
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+            .flex-item{
+                color: white;
+                margin: 50px;
+                gap: 10px;
+            }
+            #flex-item1 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item2 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item3 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item4 {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-item a{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(251, 201, 157);">
+        <div>
+            <h1 style="background-color:blue;color:white;">
+            <form>
+            <div style="float:left;">
+            Aatmiya Hospital,Vadodara
+            </div>
+            <div id="log-out">
+            <input type=submit value="Log Out" id="log">
+            </form>
+            </div><br>
+            <small>Dr. Umang Gandhi</small>
+            </h1>
+            
+            <div>
+                <div class="menu">
+                   <a href="Aatmiya Ortho Care.html" class="t tcolor">Home</a>
+                </div>
+                <div class="menu">
+                  <a href="ImageGalleryAatmiya.html" class="t tcolor"> Image Gallery</a>
+                </div>
+                <div class="menu">
+                    <a href="AboutUsAatmiya.html" class="t tcolor">About Us</a>
+                </div>
+                <div class="menu dropdown">
+                Surgeries
+                    <div class="dropdown-content">
+                       <a href="knee replacement Aatmiya.html" class="t tcol" style="color: red;">Knee Replacement</a><br>
+                        <a href="Hip Replacement.html" class="t tcol" style="color: red;">Hip Replacement</a><br>
+                        <a href="Stem cell Aatmiya.html" class="t tcol" style="color: red;">Stem cell</a><br>
+                       <a href="Emergency.html" class="t tcol" style="color: red;"> Emergency</a><br>
+                       <a href="#" class="t tcol" style="color: red;"> More</a>
+                </div>
+                </div>
+                <div class="menu">
+                   <a href="Pharmacy Details Aatmiya.html" class="t tcolor"> Pharmacy Details</a>
+                </div>
+                <div class="menu">
+                  <a href="Book Appointment Aatmiya.html" class="t tcolor" id="booking">  Book Appointment</a>
+                </div>
+                <div class="menu">
+                    <a href="Staff Aatmiya.html" class="t tcolor">  Staff</a>
+                  </div>
+            </div>
+
+        <h1 class="staff_heading" style="color:green;text-align: center;margin-top: 7%;">STAFF</h1>
+        <table class="staff">
+            <tr>
+                <td class="image">
+                    <img  height="73%" width="73%" src="data:image/jpeg;base64,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">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Dr. Umang Gandhi</b></li><br>
+                        <li>Degree:M.S. Ortho(gold medalist)</li><br>
+                        <li>Age:52</li><br>
+                        <li>Work experience:25+ years</li><br>
+                        <li>Certified:Yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://www.spandan.co.in/assets/images/doctor/Amit_Panchal.jpg">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Dr. Pratik Panchal</b></li><br>
+                        <li>Degree:M.D. Anaesthesia</li><br>
+                        <li>Age:40</li><br>
+                        <li>Work experience:15+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLs1m4Nw5ep-9OWquN2c9hNiTPkUrnk2l19g&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Mr.Kartik Shah(Receptionist)</b></li><br>
+                        <li>Degree:Masters in hospital management</li><br>
+                        <li>Age:32</li><br>
+                        <li>Work experience:10+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="%"73 width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJULemxNocW3uNnxGP15fKKbxYjYUgpZJB5g&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Mr. Parikshit Patel</b></li><br>
+                        <li>Degree:Pharmacist</li><br>
+                        <li>Age:52</li><br>
+                        <li>Work Experience:25+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5hsRkLaOfkJJVrfI8bhif7YujBbnhl55MA&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Mr. Jaydeep Shinde</b></li><br>
+                        <li>Degree:Nurse</li><br>
+                        <li>Age:30</li><br>
+                        <li>Work Experience:15+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAtnXrdjuT_McTFrE_q84lTPddl7sDPBZaw&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Mrs. Tarlika Patel</b></li><br>
+                        <li>Degree:Nurse</li><br>
+                        <li>Age:40</li><br>
+                        <li>Work Experience:15+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnEwILjuDO4fJ7wT9ML0VxrRjV15S5koyCWQ&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Dr. Atul Patel</b></li><br>
+                        <li>Degree:M.D. Anaesthesia</li><br>
+                        <li>Age:50</li><br>
+                        <li>Work Experience:15+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="image">
+                    <img height="73%" width="73%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu8-R_4dbPnb4ZFc3YsvZieFejEaiTa4nZuA&s">
+                </td>
+                <td>
+                    <ul>
+                        <li><b>Dr. Mrugesh</b></li><br>
+                        <li>Degree:MBBS</li><br>
+                        <li>Age:40</li><br>
+                        <li>Work Experience:15+ years</li><br>
+                        <li>Certified:yes</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <div class="container" style="margin-top: 4%;">
+
+            <div class="flex-item" id="flex-item1">
+                <h2>Hospital</h2>
+                <a href="AboutUsAatmiya.html">About Us</a>
+                <a href="https://pay.google.com/about/">Online Payment</a>
+                <a href="Book Appointment Aatmiya.html">Online Consultancy</a>
+            </div>
+
+            <div class="flex-item" id="flex-item2">
+                <h2>Online Shop</h2>
+                <a href="Pharmacy Details Aatmiya.html">Medicines</a>
+                <a href="Pharmacy Details Aatmiya.html">Pain sprays</a>
+                <a href="Pharmacy Details Aatmiya.html">Elestrocaps</a>
+            </div>
+
+            <div class="flex-item" id="flex-item3">
+                <h2>Get Help</h2>
+                <a href="Aatmiya Ortho Care.html">Our Services</a>
+                <a href="Aatmiya Ortho Care.html">Privacy policy</a>
+                <a href="Book Appointment Aatmiya.html">Book Appointment</a>
+            </div>
+
+            <div class="flex-item" id="flex-item4">
+                <h2>Contact Us</h2>
+                <a href=""><i class="fab fa-facebook"></i>-Aatmiya Hospital </a>
+                <a href=""><i class="fab fa-twitter"></i>-Aatmiya.ortho </a>
+                <a href=""><i class="fab fa-whatsapp"></i>-9824088605 </a>
+            </div>
+
+        </div>
+    </body>
+</html>

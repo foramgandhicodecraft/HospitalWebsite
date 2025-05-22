@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <title>Stem Cell</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            .mode{
+        float:left;
+        background-color: rgb(88, 165, 198);
+        margin-left:35%;
+        margin-top:5%;
+        height:50px;
+        width:140px;
+        font-size:large;
+    }
+             #log-out{
+        float:left;
+        height:20px;
+        width:10px;
+        margin-left:60%;
+        margin-top:0.5%;
+    }
+    #log{
+        background-color:red;
+        width:70px;
+        height:50px;
+    }
+    .menu{
+        float:left;
+        background-color:black;
+        color:white;
+        width:10%;
+        height:5%;
+        font-size: 115%;
+        margin-top: 0%;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+    .menu:hover{
+        background-color: pink;
+    }
+    .dropdown{
+        position:relative;
+        display:inline-block;
+        height:5%;
+    }
+    .dropdown-content{
+        position:absolute;
+        display:none;
+        width:100%;
+        background-color:red;
+        color:black;
+        height:5%;
+    }
+    .dropdown:hover .dropdown-content{
+        background-color:rgb(169, 168, 168);
+        display:block;
+    }
+    .t{
+        text-decoration:none;
+    }
+    .tcolor{
+        color:white;
+    }
+    .tcol{
+        color:white;
+    }
+    .footer{
+        margin-top: 10%;
+    }
+    .picture{
+        float: left;
+    }
+    .major{
+        float:left;
+    }
+    .container{
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+            .flex-item{
+                color: white;
+                margin: 50px;
+                gap: 10px;
+            }
+            #flex-item1 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item2 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item3 {
+                display: flex;
+                flex-direction: column;
+            }
+            #flex-item4 {
+                display: flex;
+                flex-direction: column;
+            }
+            .flex-item a{
+                text-decoration: none;
+                color: white;
+            }
+            .container2{
+                display:flex;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 style="background-color:blue;color:white;">
+            <form>
+            <div style="float:left;">
+            Aatmiya Hospital,Vadodara
+            </div>
+            <div id="log-out">
+            <input type=submit value="Log Out" id="log">
+            </form>
+            </div><br>
+            <small>Dr. Umang Gandhi</small>
+            </h1>
+            
+            <div>
+                <div class="menu">
+                   <a href="Aatmiya Ortho Care.html" class="t tcolor"> Home</a>
+                </div>
+                <div class="menu">
+                  <a href="ImageGalleryAatmiya.html" class="t tcolor"> Image Gallery</a>
+                </div>
+                <div class="menu">
+                    <a href="AboutUsAatmiya.html" class="t tcolor">About Us</a>
+                </div>
+                <div class="menu dropdown">
+                Surgeries
+                    <div class="dropdown-content">
+                       <a href="knee replacement Aatmiya.html" class="t tcol" style="color:red;">Knee Replacement</a><br>
+                        <a href="Hip Replacement.html" class="t tcol" style="color: red;">Hip Replacement</a><br>
+                        <a href="Stem cell Aatmiya.html" class="t tcol" style="color: red;">Stem cell</a><br>
+                </div>
+                </div>
+                <div class="menu">
+                   <a href="Pharmacy Details Aatmiya.html" class="t tcolor"> Pharmacy Details</a>
+                </div>
+                <div class="menu">
+                  <a href="Book Appointment Aatmiya.html" class="t tcolor">  Book Appointment</a>
+                </div>
+                <div class="menu">
+                    <a href="Staff Aatmiya.html" class="t tcolor">  Staff</a>
+                  </div>
+            </div>
+
+        <div style="width:100%;">
+            <div style="float:left;width: 50%;">
+                <div class="picture" style="width:25%;height: 25%;margin-top: 14.3%;margin-left: 20%;">
+                    <img src="data:image/jpeg;base64,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" height="100%" width="100%">
+                </div>
+                <div class="picture" style="width:25%;height: 25%;margin-left: 3.3%;margin-top: 14.4%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7FWsJulcygi0ZXzefp-3mUMRkVAnGlF0_zg&usqp=CAU" height="100%" width="100%">
+                </div>
+                <div class="picture" style="width:12.5%;height: 25%;position: absolute;margin-left: 10%;margin-top: 20%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBPX7DwzOYFlyKPn0Ucc5jT121Dxvw8gyNSryT6a0fo3yJTJ9dEz7iVDCQ0HVMby7SH6c&usqp=CAU" height="100%" width="100%">
+                </div>
+                <div class="picture" style="width:12.5%;height: 25%;position:absolute;margin-left: 24%;margin-top: 20%;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJAoh5RWLllivdB_wRzS3qNS2DhHikyCwR6Q&usqp=CAU" height="100%" width="100%">
+                </div>
+
+            </div>
+
+            <div style="width: 50%;float: right;">
+                <h1 style="color:blueviolet;margin-top: 5%;text-align: center;">STEM CELL</h1>
+                <p style="font-size: 140%;"><i>At Aatmiya,we specialize in restoring your quality of life through advanced orthopedic care. If you're considering knee replacement surgery, you're on the path to reclaiming mobility and freedom from pain. This page provides comprehensive information about knee replacement surgery, its benefits, the procedure itself, and what to expect during recovery.If you're experiencing persistent knee pain that interferes with your daily activities and conservative treatments haven't provided relief, knee replacement surgery may be a viable option. However, the decision to undergo surgery should be made in consultation with your orthopedic surgeon after a thorough evaluation of your condition and discussion of the potential risks and benefits.At Aatmiya, our orthopedic specialist are dedicated to helping you regain function and alleviate pain through personalized care and advanced surgical techniques. If you're considering knee replacement surgery or seeking expert orthopedic advice, we're here to support you every step of the way. Contact us today to schedule a consultation and take the first step toward a life without knee pain.
+
+
+
+
+
+                </i></p>
+            </div>
+        </div>
+        
+        <h1 style="text-align: center;margin-top: 40%;">"We are the pioneers, ofcourse We are the Best"</h1>
+        <h1 style="text-align: center;margin-top: 5%;"><u>Testimonials</u></h1>
+        <div class="container2">
+            <div class="testimonial" style="background-color: pink;">
+                <p>"I have been to several hospitals,but the hospitality and treatment received at aatmiya ortho care is unparallel.From doctor to staff to nurses,everyone is very caring and polite.I am very thankful to Dr. Umang Gandhi and his team"<br>
+                      <small>-Kriti Shah</small>
+                </p>
+            </div>
+            <div class="testimonial" style="background-color: paleturquoise;">
+                <p>"My knee pain of years is finally cured,I am very grateful to aatmiya doctors and staff.With their kind help and support,I am able to walk properly at the age of 75.I strongly recommend aatmiya for Total Knee Replacement.Thank you Aatmiya"<br>
+                      <small>-Hemant Prajapati</small>
+                </p>
+            </div>
+            <div class="testimonial" style="background-color: pink;">
+                <p>"The staff is very sweet and the doctor has good knowledge about the subject.My mother underwent a stem cell surgery at Aatmiya and now the results are very positive.Dr. Umang Gandhi is also one of the pioneers of stem cell surgery in Vadodara"<br>
+                      <small>-Aagam Jain</small>
+                </p>
+            </div>
+            
+        </div>
+        <div class="container2">
+            <div class="testimonial" style="background-color: paleturquoise;">
+                <p>"I have been to several hospitals,but the hospitality and treatment received at aatmiya ortho care is unparallel.From doctor to staff to nurses,everyone is very caring and polite.I am very thankful to Dr. Umang Gandhi and his team"<br>
+                      <small>-Kriti Shah</small>
+                </p>
+            </div>
+            <div class="testimonial" style="background-color: pink;">
+                <p>"My knee pain of years is finally cured,I am very grateful to aatmiya doctors and staff.With their kind help and support,I am able to walk properly at the age of 75.I strongly recommend aatmiya for Total Knee Replacement.Thank you Aatmiya"<br>
+                      <small>-Hemant Prajapati</small>
+                </p>
+            </div>
+            <div class="testimonial" style="background-color: paleturquoise;">
+                <p>"The staff is very sweet and the doctor has good knowledge about the subject.My mother underwent a stem cell surgery at Aatmiya and now the results are very positive.Dr. Umang Gandhi is also one of the pioneers of stem cell surgery in Vadodara"<br>
+                      <small>-Aagam Jain</small>
+                </p>
+            </div>
+            
+        </div>
+   
+
+    <div class="container" style="margin-top: 5%;">
+
+        <div class="flex-item" id="flex-item1">
+            <h2>Hospital</h2>
+            <a href="AboutUsAatmiya.html">About Us</a>
+            <a href="https://pay.google.com/about/">Online Payment</a>
+            <a href="Book Appointment Aatmiya.html">Online Consultancy</a>
+        </div>
+
+        <div class="flex-item" id="flex-item2">
+            <h2>Online Shop</h2>
+            <a href="Pharmacy Details Aatmiya.html">Medicines</a>
+            <a href="Pharmacy Details Aatmiya.html">Pain sprays</a>
+            <a href="Pharmacy Details Aatmiya.html">Elestrocaps</a>
+        </div>
+
+        <div class="flex-item" id="flex-item3">
+            <h2>Get Help</h2>
+            <a href="Aatmiya Ortho Care.html">Our Services</a>
+            <a href="Aatmiya Ortho Care.html">Privacy policy</a>
+            <a href="Book Appointment Aatmiya.html">Book Appointment</a>
+        </div>
+
+        <div class="flex-item" id="flex-item4">
+            <h2>Contact Us</h2>
+            <a href=""><i class="fab fa-facebook"></i>-Aatmiya Hospital </a>
+            <a href=""><i class="fab fa-twitter"></i>-Aatmiya.ortho </a>
+            <a href=""><i class="fab fa-whatsapp"></i>-9824088605 </a>
+        </div>
+
+    </div>
+
+        </body>
+        </html>
